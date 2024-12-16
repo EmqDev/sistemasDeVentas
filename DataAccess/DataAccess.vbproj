@@ -68,9 +68,12 @@
     <Compile Include="Constracts\IClienteRepository.vb" />
     <Compile Include="Constracts\IGenericRepository.vb" />
     <Compile Include="Constracts\IProductoRepository.vb" />
+    <Compile Include="Constracts\IVentaItemsRepository.vb" />
+    <Compile Include="Constracts\IVentaRepository.vb" />
     <Compile Include="Entities\Cliente.vb" />
     <Compile Include="Entities\Producto.vb" />
     <Compile Include="Entities\Venta.vb" />
+    <Compile Include="Entities\VentaItems.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -90,6 +93,8 @@
     <Compile Include="Repositories\MasterRepository.vb" />
     <Compile Include="Repositories\ProductoRepository.vb" />
     <Compile Include="Repositories\Repository.vb" />
+    <Compile Include="Repositories\VentaItemsRepository.vb" />
+    <Compile Include="Repositories\VentaRepository.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

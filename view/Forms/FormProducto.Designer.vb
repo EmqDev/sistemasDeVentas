@@ -23,6 +23,7 @@ Partial Class FormProducto
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel = New System.Windows.Forms.Panel()
+        Me.cmbCategoria = New System.Windows.Forms.ComboBox()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.lblId = New System.Windows.Forms.Label()
@@ -35,14 +36,13 @@ Partial Class FormProducto
         Me.btnCrear = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblListaDeClientes = New System.Windows.Forms.Label()
-        Me.txtBuscarClientePorId = New System.Windows.Forms.TextBox()
         Me.DataGridViewProductos = New System.Windows.Forms.DataGridView()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.cmbBuscarCategoria = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.gbBuscarProducto = New System.Windows.Forms.GroupBox()
-        Me.cmbCategoria = New System.Windows.Forms.ComboBox()
+        Me.txtBuscarProductoPorId = New System.Windows.Forms.TextBox()
         Me.Panel.SuspendLayout()
         CType(Me.DataGridViewProductos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbBuscarProducto.SuspendLayout()
@@ -66,6 +66,15 @@ Partial Class FormProducto
         Me.Panel.Name = "Panel"
         Me.Panel.Size = New System.Drawing.Size(244, 400)
         Me.Panel.TabIndex = 19
+        '
+        'cmbCategoria
+        '
+        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCategoria.FormattingEnabled = True
+        Me.cmbCategoria.Location = New System.Drawing.Point(27, 185)
+        Me.cmbCategoria.Name = "cmbCategoria"
+        Me.cmbCategoria.Size = New System.Drawing.Size(186, 21)
+        Me.cmbCategoria.TabIndex = 29
         '
         'btnAceptar
         '
@@ -178,13 +187,6 @@ Partial Class FormProducto
         Me.lblListaDeClientes.TabIndex = 24
         Me.lblListaDeClientes.Text = "Lista de Productos"
         '
-        'txtBuscarClientePorId
-        '
-        Me.txtBuscarClientePorId.Location = New System.Drawing.Point(6, 43)
-        Me.txtBuscarClientePorId.Name = "txtBuscarClientePorId"
-        Me.txtBuscarClientePorId.Size = New System.Drawing.Size(277, 20)
-        Me.txtBuscarClientePorId.TabIndex = 23
-        '
         'DataGridViewProductos
         '
         Me.DataGridViewProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -223,6 +225,7 @@ Partial Class FormProducto
         '
         'cmbBuscarCategoria
         '
+        Me.cmbBuscarCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBuscarCategoria.FormattingEnabled = True
         Me.cmbBuscarCategoria.Location = New System.Drawing.Point(345, 43)
         Me.cmbBuscarCategoria.Name = "cmbBuscarCategoria"
@@ -240,7 +243,7 @@ Partial Class FormProducto
         '
         'gbBuscarProducto
         '
-        Me.gbBuscarProducto.Controls.Add(Me.txtBuscarClientePorId)
+        Me.gbBuscarProducto.Controls.Add(Me.txtBuscarProductoPorId)
         Me.gbBuscarProducto.Controls.Add(Me.Label2)
         Me.gbBuscarProducto.Controls.Add(Me.Label1)
         Me.gbBuscarProducto.Controls.Add(Me.cmbBuscarCategoria)
@@ -251,13 +254,12 @@ Partial Class FormProducto
         Me.gbBuscarProducto.TabStop = False
         Me.gbBuscarProducto.Text = "Buscar Producto"
         '
-        'cmbCategoria
+        'txtBuscarProductoPorId
         '
-        Me.cmbCategoria.FormattingEnabled = True
-        Me.cmbCategoria.Location = New System.Drawing.Point(27, 185)
-        Me.cmbCategoria.Name = "cmbCategoria"
-        Me.cmbCategoria.Size = New System.Drawing.Size(186, 21)
-        Me.cmbCategoria.TabIndex = 29
+        Me.txtBuscarProductoPorId.Location = New System.Drawing.Point(11, 43)
+        Me.txtBuscarProductoPorId.Name = "txtBuscarProductoPorId"
+        Me.txtBuscarProductoPorId.Size = New System.Drawing.Size(277, 20)
+        Me.txtBuscarProductoPorId.TabIndex = 29
         '
         'FormProducto
         '
@@ -298,12 +300,12 @@ Partial Class FormProducto
     Friend WithEvents btnCrear As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents lblListaDeClientes As Label
-    Friend WithEvents txtBuscarClientePorId As TextBox
     Friend WithEvents DataGridViewProductos As DataGridView
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnEliminar As Button
-    Friend WithEvents cmbBuscarCategoria As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents gbBuscarProducto As GroupBox
     Friend WithEvents cmbCategoria As ComboBox
+    Friend WithEvents txtBuscarProductoPorId As TextBox
+    Friend WithEvents cmbBuscarCategoria As ComboBox
 End Class

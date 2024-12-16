@@ -14,6 +14,15 @@ Public Class FormCliente
         End Try
     End Sub
 
+    Private Sub Restart()
+        Panel.Enabled = False
+        tbtId.Clear()
+        tbtCliente.Clear()
+        tbtTelefono.Clear()
+        tbtCorreo.Clear()
+
+    End Sub
+
     Private Sub tbtBuscarClientePorId_TextChanged(sender As Object, e As EventArgs) Handles tbtBuscarClientePorId.TextChanged
         If String.IsNullOrWhiteSpace(tbtBuscarClientePorId.Text) Then
             ListarClientes()
@@ -79,15 +88,6 @@ Public Class FormCliente
         Catch ex As Exception
             MessageBox.Show(ex.ToString())
         End Try
-
-    End Sub
-
-    Private Sub Restart()
-        Panel.Enabled = False
-        tbtId.Clear()
-        tbtCliente.Clear()
-        tbtTelefono.Clear()
-        tbtCorreo.Clear()
 
     End Sub
 

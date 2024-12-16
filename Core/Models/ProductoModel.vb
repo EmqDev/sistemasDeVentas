@@ -19,7 +19,7 @@ Public Class ProductoModel
     End Property
 
     <Required>
-    <RegularExpression("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$", ErrorMessage:="Ingresar solo letras, espacios y caracteres con acentos")>
+    <RegularExpression("^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$", ErrorMessage:="Ingresar solo letras")>
     Public Property Nombre As String
         Get
             Return _nombre
@@ -109,6 +109,11 @@ Public Class ProductoModel
 
         Return GetProducto().FindAll(Function(prod) prod.Id.ToString() = filter)
 
+    End Function
+
+    Public Function FindByCategory(filter As String) As IEnumerable(Of ProductoModel)
+
+        Return GetProducto().FindAll(Function(prod) prod.Categoria.Contains(filter))
 
     End Function
 

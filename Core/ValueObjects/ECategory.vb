@@ -1,8 +1,7 @@
 ﻿Public Enum ECategory
-    Electronica
-    Papeleria
+    Electrónica
+    Papelería
     Muebles
-    AccesoriosEscolares
     Hogar
 
 End Enum
