@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Constracts\IClienteRepository.vb" />
     <Compile Include="Constracts\IGenericRepository.vb" />
+    <Compile Include="Constracts\IProductoRepository.vb" />
     <Compile Include="Entities\Cliente.vb" />
     <Compile Include="Entities\Producto.vb" />
     <Compile Include="Entities\Venta.vb" />
@@ -87,6 +88,7 @@
     </Compile>
     <Compile Include="Repositories\ClienteRepository.vb" />
     <Compile Include="Repositories\MasterRepository.vb" />
+    <Compile Include="Repositories\ProductoRepository.vb" />
     <Compile Include="Repositories\Repository.vb" />
   </ItemGroup>
   <ItemGroup>

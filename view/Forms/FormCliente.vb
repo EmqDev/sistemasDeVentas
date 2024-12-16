@@ -95,19 +95,5 @@ Public Class FormCliente
         Restart()
     End Sub
 
-    Private Sub Panel_Paint(sender As Object, e As PaintEventArgs) Handles Panel.Paint
 
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub lblListaDeClientes_Click(sender As Object, e As EventArgs) Handles lblListaDeClientes.Click
-
-    End Sub
-
-    Private Sub DataGridViewClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewClientes.CellContentClick
-
-    End Sub
 End Class

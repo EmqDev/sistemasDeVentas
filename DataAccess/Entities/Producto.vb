@@ -1,7 +1,7 @@
 ﻿Public Class Producto
-    Public Property id As Integer
-    Public Property nombre As String
-    Public Property precio As Double
-    Public Property categoria As String
+    Public Property ID As Integer
+    Public Property Nombre As String
+    Public Property Precio As Double
+    Public Property Categoria As String
 
 End Class

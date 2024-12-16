@@ -31,48 +31,53 @@ Partial Class FormPrincipal
         '
         'btnClientes
         '
+        Me.btnClientes.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnClientes.Location = New System.Drawing.Point(49, 74)
         Me.btnClientes.Name = "btnClientes"
         Me.btnClientes.Size = New System.Drawing.Size(178, 76)
         Me.btnClientes.TabIndex = 0
         Me.btnClientes.Text = "Clientes"
-        Me.btnClientes.UseVisualStyleBackColor = True
+        Me.btnClientes.UseVisualStyleBackColor = False
         '
         'btnProductos
         '
+        Me.btnProductos.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnProductos.Location = New System.Drawing.Point(49, 156)
         Me.btnProductos.Name = "btnProductos"
         Me.btnProductos.Size = New System.Drawing.Size(178, 76)
         Me.btnProductos.TabIndex = 1
         Me.btnProductos.Text = "Productos"
-        Me.btnProductos.UseVisualStyleBackColor = True
+        Me.btnProductos.UseVisualStyleBackColor = False
         '
         'btnVentas
         '
+        Me.btnVentas.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnVentas.Location = New System.Drawing.Point(49, 238)
         Me.btnVentas.Name = "btnVentas"
         Me.btnVentas.Size = New System.Drawing.Size(178, 76)
         Me.btnVentas.TabIndex = 2
         Me.btnVentas.Text = "Ventas"
-        Me.btnVentas.UseVisualStyleBackColor = True
+        Me.btnVentas.UseVisualStyleBackColor = False
         '
         'btnVender
         '
-        Me.btnVender.Location = New System.Drawing.Point(554, 320)
+        Me.btnVender.BackColor = System.Drawing.Color.YellowGreen
+        Me.btnVender.Location = New System.Drawing.Point(519, 320)
         Me.btnVender.Name = "btnVender"
-        Me.btnVender.Size = New System.Drawing.Size(178, 76)
+        Me.btnVender.Size = New System.Drawing.Size(241, 76)
         Me.btnVender.TabIndex = 3
-        Me.btnVender.Text = "Vender"
-        Me.btnVender.UseVisualStyleBackColor = True
+        Me.btnVender.Text = "Generar Venta"
+        Me.btnVender.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button1.Location = New System.Drawing.Point(49, 320)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 76)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Informes"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'FormPrincipal
         '

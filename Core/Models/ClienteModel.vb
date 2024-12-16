@@ -109,7 +109,7 @@ Public Class ClienteModel
 
     Public Function FindById(filter As String) As IEnumerable(Of ClienteModel)
 
-        Return GetCliente().FindAll(Function(emp) emp.Id.ToString() = filter)
+        Return GetCliente().FindAll(Function(cli) cli.Id.ToString() = filter)
 
 
     End Function
