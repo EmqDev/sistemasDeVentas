@@ -67,6 +67,8 @@
   <ItemGroup>
     <Compile Include="Models\ClienteModel.vb" />
     <Compile Include="Models\ProductoModel.vb" />
+    <Compile Include="Models\VentaItemsModel.vb" />
+    <Compile Include="Models\VentaModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -83,6 +85,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\ControlllerVentaGenerada.vb" />
     <Compile Include="ValueObjects\ECategory.vb" />
     <Compile Include="ValueObjects\EntityState.vb" />
   </ItemGroup>
@@ -111,8 +114,6 @@
       <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

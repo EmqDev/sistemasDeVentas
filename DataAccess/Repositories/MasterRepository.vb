@@ -16,7 +16,7 @@ Public MustInherit Class MasterRepository
                 For Each item As SqlParameter In parameters
                     command.Parameters.Add(item)
                 Next
-                Dim resultado As Integer = command.ExecuteNonQuery()
+                Dim resultado As Integer = Convert.ToInt32(command.ExecuteScalar())
                 parameters.Clear()
                 Return resultado
             End Using

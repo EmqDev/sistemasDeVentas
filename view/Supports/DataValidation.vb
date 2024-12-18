@@ -16,9 +16,24 @@ Public Class DataValidation
             For Each item As ValidationResult In results
                 message += item.ErrorMessage + vbNewLine
             Next
-            MessageBox.Show(message)
+            MessageBox.Show(message, "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
         Return valid
+    End Function
+
+    Public Shared Function ValidarTextBoxEnGroupBox(grp As GroupBox) As Boolean
+        For Each ctrl As Control In grp.Controls
+
+            If TypeOf ctrl Is TextBox Then
+                Dim txt As TextBox = DirectCast(ctrl, TextBox)
+                If String.IsNullOrWhiteSpace(txt.Text) Then
+                    MessageBox.Show("los campos no puede estar vacío.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    txt.Focus()
+                    Return False
+                End If
+            End If
+        Next
+        Return True
     End Function
 
 End Class

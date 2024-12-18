@@ -107,9 +107,9 @@ Public Class ClienteModel
         Return listClienteViewModel
     End Function
 
-    Public Function FindById(filter As String) As IEnumerable(Of ClienteModel)
+    Public Function FindById(filter As String) As ClienteModel
 
-        Return GetCliente().FindAll(Function(cli) cli.Id.ToString() = filter)
+        Return GetCliente().Find(Function(cli) cli.Id.ToString() = filter)
 
 
     End Function

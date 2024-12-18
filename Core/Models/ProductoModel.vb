@@ -105,9 +105,9 @@ Public Class ProductoModel
         Return listProductoViewModel
     End Function
 
-    Public Function FindById(filter As String) As IEnumerable(Of ProductoModel)
+    Public Function FindById(filter As String) As ProductoModel
 
-        Return GetProducto().FindAll(Function(prod) prod.Id.ToString() = filter)
+        Return GetProducto().Find(Function(prod) prod.Id.ToString() = filter)
 
     End Function
 

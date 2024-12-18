@@ -44,7 +44,9 @@ Public Class FormProducto
         If String.IsNullOrWhiteSpace(txtBuscarProductoPorId.Text) Then
             ListarProductos()
         Else
-            DataGridViewProductos.DataSource = productoModel.FindById(txtBuscarProductoPorId.Text)
+            Dim listProductoAux As New List(Of ProductoModel)
+            listProductoAux.Add(productoModel.FindById(txtBuscarProductoPorId.Text))
+            DataGridViewProductos.DataSource = listProductoAux
         End If
     End Sub
 
@@ -72,7 +74,6 @@ Public Class FormProducto
             productoModel.State = EntityState.Modified
             txtNombre.Text = DataGridViewProductos.CurrentRow.Cells(1).Value
             txtPrecio.Text = DataGridViewProductos.CurrentRow.Cells(2).Value
-            'cmbCategoria.SelectedItem = DataGridViewProductos.CurrentRow.Cells(3).Value
         Else
             MessageBox.Show("elija un fila a modificar")
 
@@ -89,7 +90,7 @@ Public Class FormProducto
             ListarProductos()
             Restart()
         Else
-            MessageBox.Show("elija un fila a modificar")
+            MessageBox.Show("elija un fila a Eliminar")
 
         End If
 
@@ -97,7 +98,7 @@ Public Class FormProducto
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Try
-            Dim precio
+            Dim precio As Double
 
             productoModel.Nombre = txtNombre.Text
 

@@ -92,6 +92,12 @@
     <Compile Include="Forms\FormProducto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FormVentas.Designer.vb">
+      <DependentUpon>FormVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FormVentasItems.Designer.vb">
       <DependentUpon>FormVentasItems.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
     <EmbeddedResource Include="Forms\FormProducto.resx">
       <DependentUpon>FormProducto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVentas.resx">
+      <DependentUpon>FormVentas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVentasItems.resx">
       <DependentUpon>FormVentasItems.vb</DependentUpon>
     </EmbeddedResource>
@@ -154,8 +163,9 @@
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

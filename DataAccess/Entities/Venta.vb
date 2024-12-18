@@ -1,6 +1,6 @@
 ﻿Public Class Venta
-    Public Property id As Integer
-    Public Property idCliente As Integer
-    Public Property fecha As Date
-    Public Property total As Double
+    Public Property ID As Integer
+    Public Property IdCliente As Integer
+    Public Property Fecha As Date
+    Public Property Total As Double
 End Class
